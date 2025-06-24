@@ -1,0 +1,47 @@
+{
+  "name": "data-view-ex",
+  "version": "1.0.0",
+  "description": "DataView Extended",
+  "keywords": [
+    "dataview",
+    "extended",
+    "extension"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luastoned/data-view-ex.git"
+  },
+  "author": "LuaStoned <npm@luastoned.com>",
+  "license": "MIT",
+  "private": false,
+  "main": "lib/index.cjs",
+  "module": "lib/index.mjs",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "build": "yarn clean && yarn build:tsup",
+    "build:tsup": "tsup",
+    "build:code": "tsc --project tsconfig.build.json",
+    "build:types": "tsc --project tsconfig.build.json --declaration --emitDeclarationOnly",
+    "clean": "rimraf coverage dist docs lib",
+    "test": "vitest",
+    "release": "release-it"
+  },
+  "dependencies": {
+    "std-kit": "^2.4.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.0.5",
+    "@types/node": "^24.0.3",
+    "esbuild": "^0.25.5",
+    "release-it": "^19.0.3",
+    "rimraf": "^6.0.1",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^3.2.4"
+  }
+}
