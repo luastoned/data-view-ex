@@ -1,5 +1,5 @@
 {
-  "name": "data-view-ex",
+  "name": "dataview-ex",
   "version": "1.0.0",
   "description": "DataView Extended",
   "keywords": [
@@ -9,7 +9,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/luastoned/data-view-ex.git"
+    "url": "git+https://github.com/luastoned/dataview-ex.git"
   },
   "author": "LuaStoned <npm@luastoned.com>",
   "license": "MIT",
